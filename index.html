@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="UTF-8">
+<title>AI YouTube FINAL</title>
+<style>
+body{margin:0;background:#0f0f0f;color:white;font-family:Arial}
+.content{display:grid;grid-template-columns:repeat(auto-fill,minmax(250px,1fr));gap:20px;padding:20px}
+.video{cursor:pointer}
+.thumb img{width:100%;border-radius:10px}
+.title{margin-top:5px}
+</style>
+</head>
+
+<body>
+
+<h2 style="padding:10px">AI YouTube</h2>
+
+<div class="content">
+
+<div class="video" onclick="openVideo('UDVLn4Xvyz8')">
+  <div class="thumb">
+    <img src="https://img.youtube.com/vi/UDVLn4Xvyz8/hqdefault.jpg">
+  </div>
+  <div class="title">Video 1</div>
+</div>
+
+<div class="video" onclick="openVideo('AwoHg88jaag')">
+  <div class="thumb">
+    <img src="https://img.youtube.com/vi/AwoHg88jaag/hqdefault.jpg">
+  </div>
+  <div class="title">Video 2</div>
+</div>
+
+<div class="video" onclick="openVideo('IAaQ1yNJ_74')">
+  <div class="thumb">
+    <img src="https://img.youtube.com/vi/IAaQ1yNJ_74/hqdefault.jpg">
+  </div>
+  <div class="title">Video 3</div>
+</div>
+
+</div>
+
+<script>
+function openVideo(id){
+  window.location.href = "watch.html?v=" + id;
+}
+</script>
+
+</body>
+</html> 
